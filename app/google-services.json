@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "790137759184",
+    "project_id": "tiketspro",
+    "storage_bucket": "tiketspro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:790137759184:android:28895b616228fc3913c5d5",
+        "android_client_info": {
+          "package_name": "com.ticketSpace.ticketpro_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "790137759184-leulub9ln38cpg2ni6j5hkq79eme0ihv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ticketSpace.ticketpro_app",
+            "certificate_hash": "7b646e9e3d33c6343546d16d00b59834c996f066"
+          }
+        },
+        {
+          "client_id": "790137759184-5gqke2ih9sfk8t1rar2ccjagq4d70ek3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZoZVr19X2cPI2DRSBL1P51I-WssAD04w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "790137759184-5gqke2ih9sfk8t1rar2ccjagq4d70ek3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

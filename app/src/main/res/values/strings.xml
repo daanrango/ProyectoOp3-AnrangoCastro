@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">TicketPro APP</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--Menu admin-->
+    <string name="InicioAdmin">Inicio</string>
+    <string name="PerfilAdmin">Perfil</string>
+    <string name="ResgistrarAdmin">Registrar</string>
+    <string name="ListarAdmin">Lista de administradores</string>
+    <string name="Salir">Cerrar session</string>
+
+    <!--Menu Cliente-->
+    <string name="Opcionestxt">Opciones</string>
+    <string name="InicioCliente">Inicio</string>
+    <string name="MasOpcionestxt">Mas Opciones</string>
+    <string name="AcercaDe">Acerca De:</string>
+    <string name="Compartir">Compatir</string>
+    <string name="Acceder">Acceder</string>
+
+    <!--registrar admin-->
+    <string name="RegistroTXT">Registro de Administradores</string>
+    <string name="Correo">Correo Electronico</string>
+    <string name="Password">Contraseña</string>
+    <string name="Nombres">Nombres Completos</string>
+    <string name="Apellidos">Apellidos Completos</string>
+    <string name="Cedula">Numero de Cedula</string>
+    <string name="FechaRegistro">Fecha de Registro</string>
+    <string name="Registrar">Registrar</string>
+    
+    <!--login administradores-->
+    <string name="LoginTXT">Login de Administradores</string>
+    <string name="Ingresar">Ingresar</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
