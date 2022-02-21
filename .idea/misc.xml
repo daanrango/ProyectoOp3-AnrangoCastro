@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/drawable-anydpi/edit_icon.xml" value="0.23333333333333334" />
         <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/activity_inicio_sesion.xml" value="0.2015625" />
         <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/activity_main_administrador.xml" value="0.2015625" />
@@ -10,6 +11,7 @@
         <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/encabezado.xml" value="0.2015625" />
         <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/fragment_acerca_de_cliente.xml" value="0.2015625" />
         <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/fragment_inicio_admin.xml" value="0.25" />
+        <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/fragment_perfil_admin.xml" value="0.2171875" />
         <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/fragment_registrar_admin.xml" value="0.25" />
         <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/fragment_registro_admin.xml" value="0.2015625" />
         <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/menu/menu_admin.xml" value="0.2015625" />
