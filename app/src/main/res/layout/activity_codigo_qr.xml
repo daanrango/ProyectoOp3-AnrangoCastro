@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#fff"
+    tools:context=".CodigoQR">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_marginTop="10dp">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/MensajeGenerar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Mensaje"
+                android:inputType="text"/>
+        <Button
+            android:id="@+id/Generar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generar"
+            />
+        <ImageView
+            android:id="@+id/Codigo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/GuardarImagen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+</RelativeLayout>
