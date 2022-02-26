@@ -15,17 +15,22 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.ticketSpace.ticketpro_app.FragmentosAdministrador.RegistrarAdmin;
 
 public class InicioSesion extends AppCompatActivity {
 
     EditText Correo, Password;
-    Button Acceder;
+    Button Acceder, Registrate;
     FirebaseAuth firebaseAuth;
     ProgressDialog progressDialog;
 
@@ -43,6 +48,7 @@ public class InicioSesion extends AppCompatActivity {
         Correo = findViewById(R.id.Correo);
         Password = findViewById(R.id.Password);
         Acceder = findViewById(R.id.Acceder);
+        Registrate = findViewById(R.id.Registrate);
 
         firebaseAuth = FirebaseAuth.getInstance();
 

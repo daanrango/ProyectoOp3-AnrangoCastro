@@ -22,7 +22,7 @@
             <item
                 android:id="@+id/AcercaDe"
                 android:title="@string/AcercaDe"
-                android:icon="@drawable/info_icon">
+                android:icon="@drawable/welcom_icon">
             </item>
             <item
                 android:id="@+id/Compartir"

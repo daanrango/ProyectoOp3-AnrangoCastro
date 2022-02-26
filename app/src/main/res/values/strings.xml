@@ -8,19 +8,20 @@
     <string name="InicioAdmin">Inicio</string>
     <string name="PerfilAdmin">Perfil</string>
     <string name="ResgistrarAdmin">Registrar</string>
-    <string name="ListarAdmin">Lista de administradores</string>
+    <string name="ListarAdmin">Lista de Eventos</string>
     <string name="Salir">Cerrar session</string>
 
     <!--Menu Cliente-->
     <string name="Opcionestxt">Opciones</string>
     <string name="InicioCliente">Inicio</string>
     <string name="MasOpcionestxt">Mas Opciones</string>
-    <string name="AcercaDe">Acerca De:</string>
+    <string name="AcercaDe">Bienvenido</string>
     <string name="Compartir">Compatir</string>
     <string name="Acceder">Acceder</string>
+    <string name="Registrate">Registrate Hoy</string>
 
     <!--registrar admin-->
-    <string name="RegistroTXT">Registro de Administradores</string>
+    <string name="RegistroTXT">Registro de Usuario</string>
     <string name="Correo">Correo Electronico</string>
     <string name="Password">Contraseña</string>
     <string name="Nombres">Nombres Completos</string>
@@ -28,9 +29,9 @@
     <string name="Cedula">Numero de Cedula</string>
     <string name="FechaRegistro">Fecha de Registro</string>
     <string name="Registrar">Registrar</string>
-    
+
     <!--login administradores-->
-    <string name="LoginTXT">Login de Administradores</string>
+    <string name="LoginTXT">Login</string>
     <string name="Ingresar">Ingresar</string>
 
     <!--Perfil-->
@@ -50,6 +51,16 @@
     <string name="CEDULAPERFIL"> -- </string>
     <string name="ACTUALIZARPASS">Actualizar Password</string>
     <string name="ACTUALIZARDATOS">Actualizar Datos</string>
+
+    <!---->
+    <string name="CategoriasTXT">Estas son nuestras Categorias de Eventos</string>
+    <string name="NombreCategoriaF"> -- </string>
+    <string name="allEvents">Todos los eventos</string>
+    <string name="clienteS">--</string>
+
+    <string name="NombreEvento"> -- </string>
+    <string name="PrecioEvento"> -- </string>
+    <string name="filtrado"> -- </string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

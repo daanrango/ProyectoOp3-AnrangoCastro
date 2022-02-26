@@ -21,10 +21,19 @@
             android:id="@+id/Acceder"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
             android:layout_marginTop="25dp"
+            android:background="@color/colorPrimary"
             android:text="@string/Acceder"
             android:textColor="@color/white" />
+
+        <Button
+        android:id="@+id/Registrate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorSecundary"
+        android:text="@string/Registrate"
+        android:textColor="@color/white" />
     </androidx.appcompat.widget.LinearLayoutCompat>
 
 </RelativeLayout>

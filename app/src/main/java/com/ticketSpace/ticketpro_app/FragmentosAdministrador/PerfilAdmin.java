@@ -201,16 +201,17 @@ public class PerfilAdmin extends Fragment {
     private void ActulizarImagenEnDB(Uri uri){
         String Ruta_de_archivo_y_nombre = RutaDeAlmacenamiento +""+imagen_perfil+"_"+user.getUid();
         StorageReference storageReference2 = storageReference.child(Ruta_de_archivo_y_nombre);
-        storageReference2.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+        storageReference2.putFile(uri)
+                .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                 Task <Uri> uriTask = taskSnapshot.getStorage().getDownloadUrl();
                 while (!uriTask.isSuccessful()){
                     Uri downloadUri = uriTask.getResult();
                     if (uriTask.isSuccessful()){
-                        HashMap<String,Object> result = new HashMap<>();
-                        result.put(imagen_perfil,downloadUri.toString());
-                        BASE_DE_DATOS_ADMINISTRADORES.child(user.getUid()).updateChildren(result)
+                        HashMap<String,Object> results = new HashMap<>();
+                        results.put(imagen_perfil,downloadUri.toString());
+                        BASE_DE_DATOS_ADMINISTRADORES.child(user.getUid()).updateChildren(results)
                                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                                     @Override
                                     public void onSuccess(Void unused) {

@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationView;
+import com.ticketSpace.ticketpro_app.FragmentosAdministrador.InicioAdmin;
 import com.ticketSpace.ticketpro_app.FragmentosCliente.AcercaDeCliente;
 import com.ticketSpace.ticketpro_app.FragmentosCliente.CompartirCliente;
 import com.ticketSpace.ticketpro_app.FragmentosCliente.InicioCliente;
@@ -42,7 +43,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         //fragmento por defauld
         if (savedInstanceState == null){
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new InicioCliente()).commit();
-
             navigationView.setCheckedItem(R.id.InicioCliente);
         }
     }

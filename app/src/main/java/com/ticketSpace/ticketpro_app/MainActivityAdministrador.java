@@ -51,7 +51,6 @@ public class MainActivityAdministrador extends AppCompatActivity implements Navi
         //fragmento por defauld
         if (savedInstanceState == null){
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_containerA,new InicioAdmin()).commit();
-
             navigationView.setCheckedItem(R.id.InicioAdmin);
         }
     }
@@ -82,6 +81,22 @@ public class MainActivityAdministrador extends AppCompatActivity implements Navi
         }
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    private void comprobandoInicio(){
+        if (user!=null){
+            Toast.makeText(this, "Se ha iniciado sesion", Toast.LENGTH_SHORT).show();
+        }else{
+            startActivity(new Intent(MainActivityAdministrador.this,MainActivity.class));
+            finish();
+        }
+
+    }
+
+    @Override
+    protected void onStart() {
+        comprobandoInicio();
+        super.onStart();
     }
 
     //CERRAR SESION

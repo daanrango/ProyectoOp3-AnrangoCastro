@@ -4,18 +4,29 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/drawable-anydpi/edit_icon.xml" value="0.23333333333333334" />
+        <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/drawable-anydpi/price_icon.xml" value="0.21770833333333334" />
+        <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/activity_conciertos_cliente.xml" value="0.2015625" />
+        <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/activity_deportes_cliente.xml" value="0.2015625" />
+        <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/activity_familiares_cliente.xml" value="0.2015625" />
+        <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/activity_ferias_cliente.xml" value="0.2015625" />
+        <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/activity_fiestas_cliente.xml" value="0.2015625" />
         <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/activity_inicio_sesion.xml" value="0.2015625" />
+        <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/activity_lista_categoria_firebase.xml" value="0.2015625" />
         <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/activity_main_administrador.xml" value="0.2015625" />
+        <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/activity_registro.xml" value="0.109375" />
         <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/carga.xml" value="0.2015625" />
+        <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/categorias_firebase.xml" value="0.2015625" />
         <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/encabezado.xml" value="0.2015625" />
         <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/fragment_acerca_de_cliente.xml" value="0.2015625" />
         <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/fragment_inicio_admin.xml" value="0.25" />
+        <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/fragment_inicio_cliente.xml" value="0.14" />
         <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/fragment_perfil_admin.xml" value="0.2171875" />
         <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/fragment_registrar_admin.xml" value="0.25" />
         <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/fragment_registro_admin.xml" value="0.2015625" />
+        <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/img_cat_f_elegida.xml" value="0.2015625" />
         <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/menu/menu_admin.xml" value="0.2015625" />
-        <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/menu/menu_cliente.xml" value="0.2015625" />
+        <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/menu/menu_cliente.xml" value="0.33" />
       </map>
     </option>
   </component>

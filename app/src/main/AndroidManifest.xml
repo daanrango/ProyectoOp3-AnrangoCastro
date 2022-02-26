@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ticketSpace.ticketpro_app">
 
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -13,7 +13,31 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".CategoriasClienteFirebase.ListaCategoriaFirebase"
+            android:exported="false" />
+        <activity
+            android:name=".Categorias.ControladorCD"
+            android:exported="false" />
+        <activity
+            android:name=".CategoriasCliente.FamiliaresCliente"
+            android:exported="false" />
+        <activity
+            android:name=".CategoriasCliente.FeriasCliente"
+            android:exported="false" />
+        <activity
+            android:name=".CategoriasCliente.FiestasCliente"
+            android:exported="false" />
+        <activity
+            android:name=".CategoriasCliente.DeportesCliente"
+            android:exported="false" />
+        <activity
+            android:name=".CategoriasCliente.ConciertosCliente"
+            android:exported="false" />
+        <activity
             android:name=".InicioSesion"
+            android:exported="false" />
+        <activity
+            android:name=".Registro"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
