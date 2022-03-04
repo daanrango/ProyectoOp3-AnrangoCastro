@@ -31,6 +31,9 @@ public class InicioAdmin extends Fragment {
     FirebaseUser user;
     DatabaseReference BASE_DE_DATOS_ADMINISTRADORES;
 
+    //Hasta aqui funviona
+
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -41,8 +44,7 @@ public class InicioAdmin extends Fragment {
         firebaseAuth= FirebaseAuth.getInstance();
         user = firebaseAuth.getCurrentUser();
         BASE_DE_DATOS_ADMINISTRADORES = FirebaseDatabase.getInstance().getReference("BASE DE DATOS ADMINISTRADORES");
-        //String su = user.getEmail().toString();
-        //clienteS.setText("Hola "+su+" ¿Como Estas que vamos ha hacer hoy?");
+
         return view;
     }
 
@@ -52,7 +54,6 @@ public class InicioAdmin extends Fragment {
         ComprobarUsuarioActivo();
 
     }
-
 
     private void ComprobarUsuarioActivo(){
         if (user!=null){
@@ -77,7 +78,5 @@ public class InicioAdmin extends Fragment {
             }
         });
     }
-
-
 
 }

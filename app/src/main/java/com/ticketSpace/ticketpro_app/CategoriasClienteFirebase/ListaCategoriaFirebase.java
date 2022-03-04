@@ -17,6 +17,7 @@ import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.ticketSpace.ticketpro_app.DetalleCliente.DetalleCliente;
 import com.ticketSpace.ticketpro_app.R;
 
 public class ListaCategoriaFirebase extends AppCompatActivity {
@@ -81,13 +82,15 @@ public class ListaCategoriaFirebase extends AppCompatActivity {
                         //final String Id = getItem(position).getId();
                         String Imagen = getItem(position).getImagen();
                         String Nombres = getItem(position).getNombre();
+                        String Direccion = getItem(position).getDireccion();
+                        String Fecha = getItem(position).getFecha();
                         String Precio = getItem(position).getPrecio();
                         //final int Vistas = getItem(position).getVistas();
                         //CONVERTIR A STRING LA VISTA
                         //String VistaString = String.valueOf(Vistas);
 
-                        /*
-                        valueEventListener = mRef.addValueEventListener(new ValueEventListener() {
+
+                        /*valueEventListener = mRef.addValueEventListener(new ValueEventListener() {
                             @Override
                             public void onDataChange(@NonNull DataSnapshot snapshot) {
                                 for (DataSnapshot ds : snapshot.getChildren()){
@@ -107,17 +110,19 @@ public class ListaCategoriaFirebase extends AppCompatActivity {
                             public void onCancelled(@NonNull DatabaseError error) {
 
                             }
-                        });
+                        });*/
 
                         //PASAMOS A LA ACTIVIDAD DETALLE CLIENTE
-                        //Intent intent = new Intent(ListaCategoriaFirebase.this, DetalleImagen.class);
+                        Intent intent = new Intent(ListaCategoriaFirebase.this, DetalleCliente.class);
 
                         //DATOS A PASAR
                         intent.putExtra("Imagen",Imagen );
                         intent.putExtra("Nombre",Nombres);
-                        intent.putExtra("Vista",VistaString);
+                        intent.putExtra("Direccion",Direccion);
+                        intent.putExtra("Fecha",Fecha);
+                        intent.putExtra("Precio",Precio);
 
-                        startActivity(intent);*/
+                        startActivity(intent);
 
                     }
 

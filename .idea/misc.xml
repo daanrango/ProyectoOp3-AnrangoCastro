@@ -7,6 +7,7 @@
         <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/drawable-anydpi/price_icon.xml" value="0.21770833333333334" />
         <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/activity_conciertos_cliente.xml" value="0.2015625" />
         <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/activity_deportes_cliente.xml" value="0.2015625" />
+        <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/activity_detalle_cliente.xml" value="0.2015625" />
         <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/activity_familiares_cliente.xml" value="0.2015625" />
         <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/activity_ferias_cliente.xml" value="0.2015625" />
         <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/activity_fiestas_cliente.xml" value="0.2015625" />
@@ -21,6 +22,7 @@
         <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/fragment_acerca_de_cliente.xml" value="0.2015625" />
         <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/fragment_inicio_admin.xml" value="0.25" />
         <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/fragment_inicio_cliente.xml" value="0.14" />
+        <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/fragment_lista_admin.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/fragment_perfil_admin.xml" value="0.2171875" />
         <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/fragment_registrar_admin.xml" value="0.25" />
         <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/fragment_registro_admin.xml" value="0.2015625" />
