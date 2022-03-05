@@ -20,8 +20,8 @@
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/FOTOPERFILIMG"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             android:layout_gravity="center"
             android:layout_marginTop="15dp"
             android:src="@drawable/perfil"/>
@@ -45,7 +45,8 @@
                 android:text="@string/UIDPERFILTXT"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"/>
+                android:textSize="18sp"
+                android:textStyle="bold"/>
             <TextView
                 android:id="@+id/UIDPERFIL"
                 android:text="@string/UIDPERFIL"
@@ -67,7 +68,8 @@
                 android:text="@string/NOMBRESPERFILTXT"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"/>
+                android:textSize="18sp"
+                android:textStyle="bold"/>
             <TextView
                 android:id="@+id/NOMBRESPERFIL"
                 android:text="@string/NOMBRESPERFIL"
@@ -89,7 +91,8 @@
                 android:text="@string/APELLIDOSPERFILTXT"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"/>
+                android:textSize="18sp"
+                android:textStyle="bold"/>
             <TextView
                 android:id="@+id/APELLIDOSPERFIL"
                 android:text="@string/APELLIDOSPERFIL"
@@ -111,7 +114,8 @@
                 android:text="@string/CORREOPERFILTXT"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"/>
+                android:textSize="18sp"
+                android:textStyle="bold"/>
             <TextView
                 android:id="@+id/CORREOPERFIL"
                 android:text="@string/CORREOPERFIL"
@@ -133,7 +137,8 @@
                 android:text="@string/PASSWORDPERFILTXT"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"/>
+                android:textSize="18sp"
+                android:textStyle="bold"/>
             <TextView
                 android:id="@+id/PASSWORDPERFIL"
                 android:text="@string/PASSWORDPERFIL"
@@ -155,7 +160,8 @@
                 android:text="@string/CEDULAPERFILTXT"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"/>
+                android:textSize="18sp"
+                android:textStyle="bold"/>
             <TextView
                 android:id="@+id/CEDULAPERFIL"
                 android:text="@string/CEDULAPERFIL"

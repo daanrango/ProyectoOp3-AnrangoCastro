@@ -19,6 +19,7 @@ import com.ticketSpace.ticketpro_app.FragmentosAdministrador.InicioAdmin;
 import com.ticketSpace.ticketpro_app.FragmentosAdministrador.ListaAdmin;
 import com.ticketSpace.ticketpro_app.FragmentosAdministrador.PerfilAdmin;
 import com.ticketSpace.ticketpro_app.FragmentosAdministrador.RegistrarAdmin;
+import com.ticketSpace.ticketpro_app.FragmentosCliente.InicioCliente;
 
 public class MainActivityAdministrador extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -50,7 +51,7 @@ public class MainActivityAdministrador extends AppCompatActivity implements Navi
 
         //fragmento por defauld
         if (savedInstanceState == null){
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_containerA,new InicioAdmin()).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_containerA,new InicioCliente()).commit();
             navigationView.setCheckedItem(R.id.InicioAdmin);
         }
     }
@@ -60,7 +61,7 @@ public class MainActivityAdministrador extends AppCompatActivity implements Navi
 
         switch (item.getItemId()){
             case R.id.InicioAdmin:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_containerA,new InicioAdmin()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_containerA,new InicioCliente()).commit();
                 break;
 
             case R.id.PerfilAdmin:
@@ -85,9 +86,9 @@ public class MainActivityAdministrador extends AppCompatActivity implements Navi
 
     private void comprobandoInicio(){
         if (user!=null){
-            Toast.makeText(this, "Se ha iniciado sesion", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, "Se ha iniciado sesion", Toast.LENGTH_SHORT).show();
         }else{
-            startActivity(new Intent(MainActivityAdministrador.this,MainActivity.class));
+            startActivity(new Intent(MainActivityAdministrador.this,InicioSesion.class));
             finish();
         }
 
@@ -102,7 +103,7 @@ public class MainActivityAdministrador extends AppCompatActivity implements Navi
     //CERRAR SESION
     private void CerrarSesion(){
         firebaseAuth.signOut();
-        startActivity(new Intent(MainActivityAdministrador.this,MainActivity.class));
+        startActivity(new Intent(MainActivityAdministrador.this,InicioSesion.class));
         Toast.makeText(this, "Cerraste session exitosamente", Toast.LENGTH_SHORT).show();
     }
 }

@@ -10,6 +10,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -30,7 +31,7 @@ import com.ticketSpace.ticketpro_app.FragmentosAdministrador.RegistrarAdmin;
 public class InicioSesion extends AppCompatActivity {
 
     EditText Correo, Password;
-    Button Acceder, Registrate;
+    Button Acceder, RegistrateL;
     FirebaseAuth firebaseAuth;
     ProgressDialog progressDialog;
 
@@ -48,7 +49,7 @@ public class InicioSesion extends AppCompatActivity {
         Correo = findViewById(R.id.Correo);
         Password = findViewById(R.id.Password);
         Acceder = findViewById(R.id.Acceder);
-        Registrate = findViewById(R.id.Registrate);
+        RegistrateL = findViewById(R.id.RegistrateL);
 
         firebaseAuth = FirebaseAuth.getInstance();
 
@@ -74,6 +75,13 @@ public class InicioSesion extends AppCompatActivity {
                 }
 
 
+        });
+        RegistrateL.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(InicioSesion.this, Registro.class);
+                startActivity(intent);
+            }
         });
 
 
@@ -121,9 +129,19 @@ public class InicioSesion extends AppCompatActivity {
                 }).show();
     }
 
-    @Override
+    /*@Override
     public boolean onSupportNavigateUp() {
-        onBackPressed();
+        //onBackPressed();
+        finish();
         return super.onSupportNavigateUp();
+    }*/
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_HOME);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+        return super.onKeyDown(keyCode, event);
     }
 }

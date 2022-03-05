@@ -12,12 +12,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.SearchView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.ticketSpace.ticketpro_app.Categorias.Cat_Firebase.CategoriasF;
 import com.ticketSpace.ticketpro_app.Categorias.Cat_Firebase.ViewHolderCF;
 import com.ticketSpace.ticketpro_app.Categorias.ControladorCD;
@@ -36,6 +42,12 @@ public class InicioCliente extends Fragment {
     FirebaseRecyclerOptions<CategoriasF> optionsD;
     FirebaseRecyclerOptions<CategoriasF> optionsD2;
 
+    TextView clienteS2;
+
+    FirebaseAuth firebaseAuth;
+    FirebaseUser user;
+    DatabaseReference BASE_DE_DATOS_ADMINISTRADORES;
+
 
 
     @Override
@@ -50,6 +62,12 @@ public class InicioCliente extends Fragment {
         //searchView = view.findViewById(R.id.txtbuscar);
         recyclerViewCategoriasF.setHasFixedSize(true);
         recyclerViewCategoriasF.setLayoutManager(linearLayoutManager);
+
+        clienteS2= view.findViewById(R.id.clienteS2);
+
+        firebaseAuth= FirebaseAuth.getInstance();
+        user = firebaseAuth.getCurrentUser();
+        BASE_DE_DATOS_ADMINISTRADORES = FirebaseDatabase.getInstance().getReference("BASE DE DATOS ADMINISTRADORES");
 
         VerCategoriasD();
 
@@ -132,8 +150,33 @@ public class InicioCliente extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
+        ComprobarUsuarioActivo();
         if (firebaseRecyclerAdapterF!=null){
             firebaseRecyclerAdapterF.startListening();
         }
     }
+    private void ComprobarUsuarioActivo(){
+        if (user!=null){
+            CargaDeDatos();
+        }
+    }
+
+    private void CargaDeDatos(){
+        BASE_DE_DATOS_ADMINISTRADORES.child(user.getUid()).addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                //si usuario admin existe
+                if (snapshot.exists()){
+                    //OBTENER EL DATO NOMBRE
+                    String nombre = ""+snapshot.child("NOMBRES").getValue();
+                    String [] strings = nombre.split(" ");
+                    clienteS2.setText("HOLA "+strings[0].toUpperCase()+" !");
+                }
+            }
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+            }
+        });
+    }
+
 }

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/white"
     tools:context=".FragmentosCliente.InicioCliente">
 
@@ -16,28 +16,63 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
+            <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:text="Hola ¿Que vamos a hacer hoy?"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:textSize="25sp" />
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:paddingStart="10dp">
 
-            <TextView
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:lottie_autoPlay="true"
+                    app:lottie_fileName="hello.json"
+                    app:lottie_imageAssetsFolder="assets"
+                    app:lottie_loop="true" />
+
+                <TextView
+                    android:id="@+id/clienteS2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="--"
+                    android:textColor="@color/black"
+                    android:textSize="35sp"
+                    android:textStyle="bold" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:text="@string/CategoriasTXT"
-                android:textColor="@color/black"
-                android:textSize="25sp" />
+                android:orientation="vertical"
+                android:padding="15dp">
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerViewCategoriasF"
-                android:layout_width="match_parent"
-                android:layout_height="690dp"
-                android:layout_marginTop="5dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/Plan"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/CategoriasTXT"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewCategoriasF"
+                    android:layout_width="match_parent"
+                    android:layout_height="575dp"
+                    android:layout_marginTop="5dp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 

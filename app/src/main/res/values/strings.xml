@@ -54,6 +54,7 @@
 
     <!---->
     <string name="CategoriasTXT">Estas son nuestras Categorias de Eventos</string>
+    <string name="Plan">¿Que vamos a hacer hoy?</string>
     <string name="NombreCategoriaF"> -- </string>
     <string name="allEvents">Todos los eventos</string>
     <string name="clienteS">--</string>

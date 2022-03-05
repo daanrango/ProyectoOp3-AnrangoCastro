@@ -8,22 +8,28 @@
     android:background="@color/white"
     tools:context=".CategoriasClienteFirebase.ListaCategoriaFirebase">
 
-    <TextView
-        android:id="@+id/filtrado"
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="5dp"
-        android:text="@string/filtrado"
-        android:gravity="center"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:textSize="25sp" />
+        android:orientation="vertical"
+        android:padding="15dp">
+        <TextView
+            android:id="@+id/filtrado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/filtrado"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:paddingTop="55dp"
-        android:id="@+id/recyclerViewCat_Elegida"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewCat_Elegida"
+            android:layout_width="match_parent"
+            android:layout_height="585dp"
+            android:paddingTop="5dp" />
 
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
 </RelativeLayout>

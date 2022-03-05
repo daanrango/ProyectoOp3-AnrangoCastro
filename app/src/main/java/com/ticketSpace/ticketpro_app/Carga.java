@@ -13,7 +13,7 @@ public class Carga extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.carga);
 
-        final int DURACION = 6000;
+        final int DURACION = 3000;
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
