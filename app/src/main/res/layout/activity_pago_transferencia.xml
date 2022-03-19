@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetalleCliente.PagoTarjeta">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tiuloCompra"
+            android:layout_margin="20sp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="sans-serif-black"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+
+            android:layout_marginBottom="10dp">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="@string/DetalleCompra"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:background="#F9694A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Evento: "
+                android:textStyle="bold"
+                android:background="@drawable/style_table"
+                android:gravity="center">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/numUnitario"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/nombreEvento"
+                android:background="@drawable/style_table"
+                >
+            </androidx.appcompat.widget.AppCompatTextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/cantidad"
+                android:textSize="25dp"
+                android:background="@drawable/style_table"
+                android:paddingStart="5dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/numUnitario"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:background="@drawable/style_table"
+                android:id="@+id/numCantidad"
+                >
+            </androidx.appcompat.widget.AppCompatTextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/totalcosto"
+                android:textSize="25dp"
+                android:background="@drawable/style_table"
+                android:paddingStart="5dp">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/numCantidad"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@drawable/style_table"
+                android:id="@+id/numTotal">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+        </LinearLayout>
+
+        <TextView
+            android:text="Datos para la Transferencia"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:background="#F9694A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px">
+        </TextView>
+
+        <TextView
+            android:text="@string/dFinalizarcompra"
+            android:gravity="left"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px">
+        </TextView>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:background="#F6D909"
+                android:text="BANCO PICHINCHA"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/logopichincha"/>
+
+                <TextView
+                    android:paddingStart="5dp"
+                    android:text="Cuenta Corriente: 22661456745 \n
+                Nombre: Ticket Pro \n
+                RUC: 1751568682001 \nUna vez que confirmes la transferencia se te acreditaran directamente tus entradas en un lapso de 24 horas."
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+        <Button
+            android:id="@+id/confirmarTransferencia"
+            android:text="Confirmar Transferencia"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:layout_gravity="end"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"/>
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>

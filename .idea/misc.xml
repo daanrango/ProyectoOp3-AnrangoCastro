@@ -3,6 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/EXMENBASES/INGENIERIA/Optativa III/Proyecto Final/ticketPro_App/app/src/main/res/drawable/style_table.xml" value="0.21" />
+        <entry key="..\:/EXMENBASES/INGENIERIA/Optativa III/Proyecto Final/ticketPro_App/app/src/main/res/layout/activity_cambio__pass.xml" value="0.2015625" />
+        <entry key="..\:/EXMENBASES/INGENIERIA/Optativa III/Proyecto Final/ticketPro_App/app/src/main/res/layout/activity_codigo_compra.xml" value="0.25" />
+        <entry key="..\:/EXMENBASES/INGENIERIA/Optativa III/Proyecto Final/ticketPro_App/app/src/main/res/layout/activity_compra_evento.xml" value="0.25" />
+        <entry key="..\:/EXMENBASES/INGENIERIA/Optativa III/Proyecto Final/ticketPro_App/app/src/main/res/layout/activity_detalle_cliente.xml" value="0.2015625" />
+        <entry key="..\:/EXMENBASES/INGENIERIA/Optativa III/Proyecto Final/ticketPro_App/app/src/main/res/layout/activity_lista_categoria_firebase.xml" value="0.2015625" />
+        <entry key="..\:/EXMENBASES/INGENIERIA/Optativa III/Proyecto Final/ticketPro_App/app/src/main/res/layout/activity_main.xml" value="0.2015625" />
+        <entry key="..\:/EXMENBASES/INGENIERIA/Optativa III/Proyecto Final/ticketPro_App/app/src/main/res/layout/activity_main_administrador.xml" value="0.2015625" />
+        <entry key="..\:/EXMENBASES/INGENIERIA/Optativa III/Proyecto Final/ticketPro_App/app/src/main/res/layout/activity_pago_tarjeta.xml" value="0.25" />
+        <entry key="..\:/EXMENBASES/INGENIERIA/Optativa III/Proyecto Final/ticketPro_App/app/src/main/res/layout/activity_pago_transferencia.xml" value="0.22" />
+        <entry key="..\:/EXMENBASES/INGENIERIA/Optativa III/Proyecto Final/ticketPro_App/app/src/main/res/layout/admin_item.xml" value="0.2015625" />
+        <entry key="..\:/EXMENBASES/INGENIERIA/Optativa III/Proyecto Final/ticketPro_App/app/src/main/res/layout/carga.xml" value="0.2015625" />
+        <entry key="..\:/EXMENBASES/INGENIERIA/Optativa III/Proyecto Final/ticketPro_App/app/src/main/res/layout/categorias_firebase.xml" value="0.2015625" />
+        <entry key="..\:/EXMENBASES/INGENIERIA/Optativa III/Proyecto Final/ticketPro_App/app/src/main/res/layout/fragment_inicio_admin.xml" value="0.2015625" />
+        <entry key="..\:/EXMENBASES/INGENIERIA/Optativa III/Proyecto Final/ticketPro_App/app/src/main/res/layout/fragment_inicio_cliente.xml" value="0.2015625" />
+        <entry key="..\:/EXMENBASES/INGENIERIA/Optativa III/Proyecto Final/ticketPro_App/app/src/main/res/layout/fragment_lista_admin.xml" value="0.2015625" />
+        <entry key="..\:/EXMENBASES/INGENIERIA/Optativa III/Proyecto Final/ticketPro_App/app/src/main/res/layout/fragment_perfil_admin.xml" value="0.22" />
+        <entry key="..\:/EXMENBASES/INGENIERIA/Optativa III/Proyecto Final/ticketPro_App/app/src/main/res/layout/img_cat_f_elegida.xml" value="0.2015625" />
+        <entry key="..\:/EXMENBASES/INGENIERIA/Optativa III/Proyecto Final/ticketPro_App/app/src/main/res/menu/menu_admin.xml" value="0.2015625" />
         <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/drawable-anydpi/edit_icon.xml" value="0.23333333333333334" />
         <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/drawable-anydpi/price_icon.xml" value="0.21770833333333334" />
         <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/activity_conciertos_cliente.xml" value="0.2015625" />
@@ -29,6 +48,22 @@
         <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/layout/img_cat_f_elegida.xml" value="0.2015625" />
         <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/menu/menu_admin.xml" value="0.2015625" />
         <entry key="..\:/Users/CAMPOVERDE_R/AndroidStudioProjects/ticketPro_App/app/src/main/res/menu/menu_cliente.xml" value="0.33" />
+        <entry key="..\:/Users/santi/OneDrive/Documentos/Santiago Castro/Noveno/Optativa III/ticketPro_App/app/src/main/res/drawable-anydpi/compartir_icon.xml" value="0.2203125" />
+        <entry key="..\:/Users/santi/OneDrive/Documentos/Santiago Castro/Noveno/Optativa III/ticketPro_App/app/src/main/res/layout/activity_codigo_compra.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/santi/OneDrive/Documentos/Santiago Castro/Noveno/Optativa III/ticketPro_App/app/src/main/res/layout/activity_compra_evento.xml" value="0.25" />
+        <entry key="..\:/Users/santi/OneDrive/Documentos/Santiago Castro/Noveno/Optativa III/ticketPro_App/app/src/main/res/layout/activity_conciertos_cliente.xml" value="0.1" />
+        <entry key="..\:/Users/santi/OneDrive/Documentos/Santiago Castro/Noveno/Optativa III/ticketPro_App/app/src/main/res/layout/activity_controlador_cd.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/santi/OneDrive/Documentos/Santiago Castro/Noveno/Optativa III/ticketPro_App/app/src/main/res/layout/activity_detalle_cliente.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/santi/OneDrive/Documentos/Santiago Castro/Noveno/Optativa III/ticketPro_App/app/src/main/res/layout/activity_inicio_sesion.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/santi/OneDrive/Documentos/Santiago Castro/Noveno/Optativa III/ticketPro_App/app/src/main/res/layout/activity_lista_categoria_firebase.xml" value="0.33" />
+        <entry key="..\:/Users/santi/OneDrive/Documentos/Santiago Castro/Noveno/Optativa III/ticketPro_App/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/santi/OneDrive/Documentos/Santiago Castro/Noveno/Optativa III/ticketPro_App/app/src/main/res/layout/activity_main_administrador.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/santi/OneDrive/Documentos/Santiago Castro/Noveno/Optativa III/ticketPro_App/app/src/main/res/layout/activity_pago_tarjeta.xml" value="0.22" />
+        <entry key="..\:/Users/santi/OneDrive/Documentos/Santiago Castro/Noveno/Optativa III/ticketPro_App/app/src/main/res/layout/activity_pago_transferencia.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/santi/OneDrive/Documentos/Santiago Castro/Noveno/Optativa III/ticketPro_App/app/src/main/res/layout/activity_registro.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/santi/OneDrive/Documentos/Santiago Castro/Noveno/Optativa III/ticketPro_App/app/src/main/res/layout/categorias_firebase.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/santi/OneDrive/Documentos/Santiago Castro/Noveno/Optativa III/ticketPro_App/app/src/main/res/layout/fragment_compra_evento.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/santi/OneDrive/Documentos/Santiago Castro/Noveno/Optativa III/ticketPro_App/app/src/main/res/layout/fragment_registrar_admin.xml" value="0.1" />
       </map>
     </option>
   </component>

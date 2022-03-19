@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import com.ticketSpace.ticketpro_app.DetalleCliente.DetalleCliente;
+
 public class Carga extends AppCompatActivity {
 
     @Override

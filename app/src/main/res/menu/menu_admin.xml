@@ -17,19 +17,14 @@
             android:icon="@drawable/dos_icon"/>
 
         <item
-            android:id="@+id/ResgistrarAdmin"
-            android:title="@string/ResgistrarAdmin"
-            android:icon="@drawable/tres_icon"/>
-
-        <item
             android:id="@+id/ListarAdmin"
             android:title="@string/ListarAdmin"
-            android:icon="@drawable/cuatro_icon"/>
+            android:icon="@drawable/tres_icon"/>
 
         <item
             android:id="@+id/Salir"
             android:title="@string/Salir"
-            android:icon="@drawable/cinco_icon"/>
+            android:icon="@drawable/cuatro_icon"/>
 
 
     </group>

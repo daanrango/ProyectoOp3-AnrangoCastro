@@ -44,8 +44,8 @@
             android:orientation="horizontal">
 
             <androidx.appcompat.widget.AppCompatImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
                 android:src="@drawable/price_icon"/>
 
             <!--VISTAS DE LA IMAGEN-->
@@ -54,6 +54,7 @@
                 android:text="@string/PrecioEvento"
                 android:textColor="@color/white"
                 android:layout_marginStart="5dp"
+                android:gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="25dp"/>
 

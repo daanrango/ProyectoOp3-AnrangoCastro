@@ -9,16 +9,18 @@
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="7dp"
+        android:padding="10dp"
         android:orientation="vertical">
         <TextView
             android:text="@string/PERFILADMINISTRADORTXT"
             android:layout_gravity="center"
-            android:textSize="20sp"
+            android:textColor="#086A87"
+            android:textSize="30sp"
+            android:textStyle="bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-        <androidx.appcompat.widget.AppCompatImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/FOTOPERFILIMG"
             android:layout_width="200dp"
             android:layout_height="200dp"
@@ -26,9 +28,17 @@
             android:layout_marginTop="15dp"
             android:src="@drawable/perfil"/>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black"
+            android:layout_marginTop="10dp"/>
+
         <TextView
             android:text="@string/MIINFORMACIONTXT"
-            android:textSize="20sp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#086A87"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
@@ -45,7 +55,8 @@
                 android:text="@string/UIDPERFILTXT"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
                 android:textStyle="bold"/>
             <TextView
                 android:id="@+id/UIDPERFIL"
@@ -68,7 +79,8 @@
                 android:text="@string/NOMBRESPERFILTXT"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
                 android:textStyle="bold"/>
             <TextView
                 android:id="@+id/NOMBRESPERFIL"
@@ -91,7 +103,8 @@
                 android:text="@string/APELLIDOSPERFILTXT"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
                 android:textStyle="bold"/>
             <TextView
                 android:id="@+id/APELLIDOSPERFIL"
@@ -114,7 +127,8 @@
                 android:text="@string/CORREOPERFILTXT"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
                 android:textStyle="bold"/>
             <TextView
                 android:id="@+id/CORREOPERFIL"
@@ -137,7 +151,8 @@
                 android:text="@string/PASSWORDPERFILTXT"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
                 android:textStyle="bold"/>
             <TextView
                 android:id="@+id/PASSWORDPERFIL"
@@ -160,7 +175,8 @@
                 android:text="@string/CEDULAPERFILTXT"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
                 android:textStyle="bold"/>
             <TextView
                 android:id="@+id/CEDULAPERFIL"
@@ -172,30 +188,44 @@
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
-        <Button
-            android:id="@+id/ACTUALIZARPASS"
-            android:text="@string/ACTUALIZARPASS"
-            android:layout_marginTop="10dp"
-            android:drawableStart="@drawable/edit_icon"
-            android:layout_gravity="center"
-            android:padding="10dp"
-            android:drawablePadding="15dp"
-            android:textColor="@color/white"
-            android:background="@color/colorPrimary"
-            android:layout_width="230dp"
-            android:layout_height="wrap_content"/>
-        <Button
-            android:id="@+id/ACTUALIZARDATOS"
-            android:text="@string/ACTUALIZARDATOS"
-            android:layout_marginTop="10dp"
-            android:drawableStart="@drawable/edit_icon"
-            android:layout_gravity="center"
-            android:padding="10dp"
-            android:drawablePadding="15dp"
-            android:textColor="@color/white"
-            android:background="@color/colorPrimary"
-            android:layout_width="230dp"
-            android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black"
+            android:layout_marginTop="10dp"/>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/ACTUALIZARPASS"
+                android:text="@string/ACTUALIZARPASS"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/edit_icon"
+                android:padding="10dp"
+                android:layout_marginStart="5dp"
+                android:drawablePadding="15dp"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+            <Button
+                android:id="@+id/ACTUALIZARDATOS"
+                android:text="@string/ACTUALIZARDATOS"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/edit_icon"
+                android:padding="10dp"
+                android:layout_marginStart="5dp"
+                android:drawablePadding="15dp"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
 
 
 

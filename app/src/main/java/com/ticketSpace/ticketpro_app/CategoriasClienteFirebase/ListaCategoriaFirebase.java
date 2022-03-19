@@ -40,7 +40,7 @@ public class ListaCategoriaFirebase extends AppCompatActivity {
 
         recyclerViewCat_Elegida = findViewById(R.id.recyclerViewCat_Elegida);
         filtrado = findViewById(R.id.filtrado);
-        filtrado.setText(BD_CAT_FIREBASE);
+        filtrado.setText(BD_CAT_FIREBASE.toUpperCase());
         recyclerViewCat_Elegida.setHasFixedSize(true);
 
         firebaseDatabase = FirebaseDatabase.getInstance();

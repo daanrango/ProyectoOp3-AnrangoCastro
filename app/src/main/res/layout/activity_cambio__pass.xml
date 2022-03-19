@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".FragmentosAdministrador.Cambio_Pass">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/MisCredencialesTXT"
+            android:textColor="#000"
+            android:textSize="25sp" />
+
+        <!--CONTRASEÑA ACTUAL TRAIDO DE FIREBASE-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <!--TEXVIEW-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PassActualTXT"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <!--CONTRASEÑA ACTUAL DEL ADMINISTRADOR-->
+            <TextView
+                android:id="@+id/PassActual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="@string/PassActual"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!--ESCRIBIR ACTUAL CONTRASEÑA-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/ActualPassET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ActualPassET"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--ESCRIBIR NUEVA CONTRASEÑA-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/NuevoPassET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/NuevoPassET"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--BOTÓN PARA CAMBIAR DE CONTRASEÑA-->
+        <Button
+            android:id="@+id/CAMBIARPASSBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/CAMBIARPASSBTN"
+            android:textColor="#fff" />
+
+        <!--BOTÓN PARA IR A INICIO - ADMINISTRADOR-->
+        <Button
+            android:id="@+id/IRINICIOBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/IRINICIOBTN"
+            android:textColor="#fff" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

@@ -9,6 +9,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.widget.Toast;
 
@@ -68,10 +69,6 @@ public class MainActivityAdministrador extends AppCompatActivity implements Navi
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_containerA,new PerfilAdmin()).commit();
                 break;
 
-            case R.id.ResgistrarAdmin:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_containerA,new RegistrarAdmin()).commit();
-                break;
-
             case R.id.ListarAdmin:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_containerA,new ListaAdmin()).commit();
                 break;
@@ -105,5 +102,13 @@ public class MainActivityAdministrador extends AppCompatActivity implements Navi
         firebaseAuth.signOut();
         startActivity(new Intent(MainActivityAdministrador.this,InicioSesion.class));
         Toast.makeText(this, "Cerraste session exitosamente", Toast.LENGTH_SHORT).show();
+    }
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_HOME);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+        return super.onKeyDown(keyCode, event);
     }
 }
