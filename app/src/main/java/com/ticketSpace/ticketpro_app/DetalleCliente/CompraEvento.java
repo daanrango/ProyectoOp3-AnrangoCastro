@@ -35,7 +35,7 @@ public class CompraEvento extends AppCompatActivity {
     AppCompatTextView numUnitario,numCantidad,numSubtotal,numTotal,nombreEvento;
     Spinner spiner;
     float numBoletos,valUnitario,subtotal,total;
-    String nombre;
+    String nombre,imagenEvento,fechaEvento;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,6 +43,8 @@ public class CompraEvento extends AppCompatActivity {
         //Precio&Nombre
         String precio=getIntent().getStringExtra("PrecioEntrada");
         this.nombre=getIntent().getStringExtra("NombreEvento");
+        this.imagenEvento=getIntent().getStringExtra("ImagenEvento");
+        this.fechaEvento=getIntent().getStringExtra("FechaEvento");
 
         Adicion=findViewById(R.id.Adicion);
         Sustraccion=findViewById(R.id.Sustraccion);
@@ -150,6 +152,8 @@ public class CompraEvento extends AppCompatActivity {
                         intent.putExtra("usuario_Compra",usuarioCompra);
                         intent.putExtra("Valor_Compra",String.valueOf(total));
                         intent.putExtra("NombreEvento",nombre);
+                        intent.putExtra("ImagenEvento",imagenEvento);
+                        intent.putExtra("FechaEvento",fechaEvento);
                         startActivity(intent);
                     }else{
                         Toast.makeText(CompraEvento.this, "Hacia Tarjeta", Toast.LENGTH_SHORT).show();
@@ -161,12 +165,10 @@ public class CompraEvento extends AppCompatActivity {
                         intent.putExtra("usuario_Compra",usuarioCompra);
                         intent.putExtra("Valor_Compra",String.valueOf(total));
                         intent.putExtra("NombreEvento",nombre);
+                        intent.putExtra("ImagenEvento",imagenEvento);
+                        intent.putExtra("FechaEvento",fechaEvento);
                         startActivity(intent);
                     }
-                    /*
-
-
-                     */
 
                 }
             }

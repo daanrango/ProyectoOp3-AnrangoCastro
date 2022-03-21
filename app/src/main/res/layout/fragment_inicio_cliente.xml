@@ -12,6 +12,8 @@
         android:layout_height="wrap_content">
 
         <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/conConexion"
+            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -74,6 +76,36 @@
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/sinConexion"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/conexxion"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                app:lottie_imageAssetsFolder="assets"
+                app:lottie_fileName="disconect.json"
+                app:lottie_loop="true"
+                app:lottie_autoPlay="true"/>
         </androidx.appcompat.widget.LinearLayoutCompat>
 
     </RelativeLayout>

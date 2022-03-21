@@ -85,6 +85,8 @@ public class PagoTransferencia extends AppCompatActivity {
         String usuario=extras.getString("usuario_Compra");
         String total=extras.getString("Valor_Compra");
         String nombre=extras.getString("NombreEvento");
+        String imagenEvento=extras.getString("ImagenEvento");
+        String fechaEvento=extras.getString("FechaEvento");
 
         transaccion.add(boletos);
         transaccion.add(fecha);
@@ -93,6 +95,8 @@ public class PagoTransferencia extends AppCompatActivity {
         transaccion.add(usuario);
         transaccion.add(total);
         transaccion.add(nombre);
+        transaccion.add(imagenEvento);
+        transaccion.add(fechaEvento);
 
         return transaccion;
     }
@@ -105,6 +109,9 @@ public class PagoTransferencia extends AppCompatActivity {
         registroVentas.put("Valor_Compra",valorCompra);
         registroVentas.put("id_user",id);
         registroVentas.put("evento",transaccion().get(6));
+        registroVentas.put("imagenEvento",transaccion().get(7));
+        registroVentas.put("fechaEvento",transaccion().get(8));
+
         FirebaseDatabase database= FirebaseDatabase.getInstance();
         DatabaseReference reference=database.getReference("BoletosComprados");
         reference.child(id.concat("_").concat(hora)).setValue(registroVentas);

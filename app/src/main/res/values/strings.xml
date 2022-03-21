@@ -15,7 +15,7 @@
     <string name="Opcionestxt">Opciones</string>
     <string name="InicioCliente">Inicio</string>
     <string name="MasOpcionestxt">Mas Opciones</string>
-    <string name="AcercaDe">Bienvenido</string>
+    <string name="AcercaDe">Acerca De Ticket Pro App</string>
     <string name="Compartir">Compatir</string>
     <string name="Acceder">Acceder</string>
     <string name="Registrate">Registrate Hoy</string>
@@ -112,4 +112,34 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Informacion App-->
+    <string name="AcercaDetalle"> ACERCA DE TICKET PRO APP</string>
+    <string name="Universidad">Universidad Central del Ecuador</string>
+    <string name="Facu">Facultad de Ingenieria y Ciencias Aplicadas</string>
+    <string name="Materia">Materia: Dispositivos Moviles</string>
+    <string name="tutor">Turor: Ing. Bayron Fabricio Torres </string>
+    <string name="version">Version: 1.0.0</string>
+    <string name="DesarrolladoD"> DESARROLLADORES </string>
+    <string name="NombreD">David Alberto Anrango Castillo</string>
+    <string name="CorreoD">daanrango@uce.edu.ec</string>
+    <string name="ir_facebook">Facebook</string>
+    <string name="ir_what">WhatsApp</string>
+    <string name="NombreS">Santiago Javier Castro Heredia</string>
+    <string name="CorreoS">sjcastro@uce.edu.ec</string>
+    <string name="ir_facebookS">Facebook</string>
+    <string name="ir_whatS">WhatsApp</string>
+
+    <!--Conexxion-->
+    <string name="conexxion">Lo sentimos surgio un problema. Revisa tu conexion a Internt. Porfavor!</string>
+    <!--Descarga QR-->
+    <string name="Descargaexitosa">DECARGA EXITOSA</string>
+    <string name="guardaEn">Guardado en la Galeria</string>
+    <string name="okDescarga">OK</string>
+
+    <!--ComparteApp-->
+    <string name="ComparteEstaApp"> Te agradeceriamos mucho si nos ayudas a crecer. Porfavor comparte esta AppCon tus amigos</string>
+    <string name="BtnCompartitr"> Compartir Ahora</string>
+
+
 </resources>

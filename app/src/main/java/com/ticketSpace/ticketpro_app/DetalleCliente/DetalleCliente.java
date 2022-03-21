@@ -27,7 +27,7 @@ public class DetalleCliente extends AppCompatActivity {
     TextView NombreImagenDetalle,fechaTXT,direcccionTXT,precioTXT,fechaTXT2;
 
     FloatingActionButton fabEstablecer,fabCompartir;
-    String precio,Nombre;
+    String precio,Nombre, imagen,Fecha;
 
     Bitmap bitmap;
     @Override
@@ -44,10 +44,10 @@ public class DetalleCliente extends AppCompatActivity {
         fabCompartir = findViewById(R.id.fabCompartir);
         fechaTXT2 = findViewById(R.id.fechaTXT2);
 
-        String imagen = getIntent().getStringExtra("Imagen");
+        this. imagen = getIntent().getStringExtra("Imagen");
         this.Nombre = getIntent().getStringExtra("Nombre");
         String Direccion = getIntent().getStringExtra("Direccion");
-        String Fecha = getIntent().getStringExtra("Fecha");
+        this. Fecha = getIntent().getStringExtra("Fecha");
         this.precio = getIntent().getStringExtra("Precio");
 
         try {
@@ -72,6 +72,8 @@ public class DetalleCliente extends AppCompatActivity {
                 Intent intent=new Intent(DetalleCliente.this,CompraEvento.class);
                 intent.putExtra("PrecioEntrada",precio);
                 intent.putExtra("NombreEvento",Nombre);
+                intent.putExtra("ImagenEvento",imagen);
+                intent.putExtra("FechaEvento",Fecha);
                 startActivity(intent);
             }
         });

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
+import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
@@ -33,25 +34,26 @@ import java.io.FileOutputStream;
 import java.util.UUID;
 
 public class CodigoCompra extends AppCompatActivity {
-    Button MenuPrincipal,GuardarImagen;
+    Button GuardarImagen;
     ImageView codigo;
     String rutaImagen;
 
     FirebaseStorage storage;
     StorageReference storageReference;
 
+    Dialog dialog;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_codigo_compra);
 
-        MenuPrincipal =findViewById(R.id.MenuPrincipal);
-        MenuPrincipal.setEnabled(false);
         GuardarImagen=findViewById(R.id.GuardarImagen);
         codigo=findViewById(R.id.Codigo);
         storage=FirebaseStorage.getInstance();
         storageReference=storage.getReference();
 
+        dialog = new Dialog(CodigoCompra.this);
 
         ActivityCompat.requestPermissions(CodigoCompra.this,new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},1);
         ActivityCompat.requestPermissions(CodigoCompra.this,new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},1);
@@ -64,19 +66,30 @@ public class CodigoCompra extends AppCompatActivity {
                 guardarImagen();
                 Toast.makeText(CodigoCompra.this, "Codigo Guardado Correctamente", Toast.LENGTH_SHORT).show();
                 GuardarImagen.setEnabled(false);
-                MenuPrincipal.setEnabled(true);
             }
         });
 
-        MenuPrincipal.setOnClickListener(new View.OnClickListener() {
+    }
+
+    private void descargaExitosa(){
+        Button okDescarga;
+        dialog.setContentView(R.layout.animacion_descarga_exitosa);
+
+        okDescarga = dialog.findViewById(R.id.okDescarga);
+
+        okDescarga.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                dialog.dismiss();
                 Intent intent=new Intent(CodigoCompra.this, MainActivityAdministrador.class);
                 startActivity(intent);
                 finish();
-
             }
         });
+
+        dialog.show();
+        dialog.setCancelable(false);
+
     }
     private void guardarImagen(){
         Drawable drawable=codigo.getDrawable();
@@ -89,7 +102,7 @@ public class CodigoCompra extends AppCompatActivity {
                 "Image of bird"
         );
         Uri savedImageURI= Uri.parse(savedImage);
-
+        descargaExitosa();
     }
     public void codigoCompra(){
         try{

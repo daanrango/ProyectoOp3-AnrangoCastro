@@ -58,9 +58,12 @@ public class PagoTarjeta extends AppCompatActivity {
                 fechaTarjeta.getText().toString().equals("")||
                 cvcTarjeta.getText().toString().equals("")||
                 telefonoTarjeta.getText().toString().equals("")){
-                    Toast.makeText(PagoTarjeta.this, "Error en los datos de la Tarjeta", Toast.LENGTH_SHORT).show();
-                }else{
-                    Toast.makeText(PagoTarjeta.this, "Entro al metodo de registro", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(PagoTarjeta.this, "No puede dejar campos vacios", Toast.LENGTH_SHORT).show();
+                }else if(numTarjeta.getText().length()!=16||cvcTarjeta.getText().length()!=3||fechaTarjeta.getText().length()!=5||telefonoTarjeta.getText().length()!=12){
+                    Toast.makeText(PagoTarjeta.this, "Error en los campos de la tarjeta", Toast.LENGTH_SHORT).show();
+                }
+                else{
+                   // Toast.makeText(PagoTarjeta.this, "Entro al metodo de registro", Toast.LENGTH_SHORT).show();
 
                     String boletos=transaccion().get(0);
                     String fecha=transaccion().get(1);
@@ -109,6 +112,10 @@ public class PagoTarjeta extends AppCompatActivity {
         String usuario=extras.getString("usuario_Compra");
         String total=extras.getString("Valor_Compra");
         String nombre=extras.getString("NombreEvento");
+        String imagenEvento=extras.getString("ImagenEvento");
+        String fechaEvento=extras.getString("FechaEvento");
+
+
 
         transaccion.add(boletos);
         transaccion.add(fecha);
@@ -117,6 +124,8 @@ public class PagoTarjeta extends AppCompatActivity {
         transaccion.add(usuario);
         transaccion.add(total);
         transaccion.add(nombre);
+        transaccion.add(imagenEvento);
+        transaccion.add(fechaEvento);
 
         return transaccion;
     }
@@ -131,6 +140,8 @@ public class PagoTarjeta extends AppCompatActivity {
         registroVentas.put("Valor_Compra",valorCompra);
         registroVentas.put("id_user",id);
         registroVentas.put("evento",transaccion().get(6));
+        registroVentas.put("imagenEvento",transaccion().get(7));
+        registroVentas.put("fechaEvento",transaccion().get(8));
         FirebaseDatabase database= FirebaseDatabase.getInstance();
         DatabaseReference reference=database.getReference("BoletosComprados");
         reference.child(id.concat("_").concat(hora)).setValue(registroVentas);

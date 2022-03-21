@@ -2,19 +2,22 @@ package com.ticketSpace.ticketpro_app.Modelo;
 
 public class Administrador {
 
-    String Boletos_Comprados,Fecha_Compra,Hora_Compra,Valor_Compra,evento,id_user,user_Compra;
+    String Boletos_Comprados,Fecha_Compra,Hora_Compra,
+            Valor_Compra,evento,fechaEvento,id_user,imagenEvento,user_Compra;
 
     public Administrador() {
 
     }
 
-    public Administrador(String boletos_Comprados, String fecha_Compra, String hora_Compra, String valor_Compra, String evento, String id_user, String user_Compra) {
+    public Administrador(String boletos_Comprados, String fecha_Compra, String hora_Compra, String valor_Compra, String evento, String fechaEvento, String id_user, String imagenEvento, String user_Compra) {
         this.Boletos_Comprados = boletos_Comprados;
         this.Fecha_Compra = fecha_Compra;
         this.Hora_Compra = hora_Compra;
-        Valor_Compra = valor_Compra;
+        this.Valor_Compra = valor_Compra;
         this.evento = evento;
+        this.fechaEvento = fechaEvento;
         this.id_user = id_user;
+        this.imagenEvento = imagenEvento;
         this.user_Compra = user_Compra;
     }
 
@@ -58,12 +61,28 @@ public class Administrador {
         this.evento = evento;
     }
 
+    public String getFechaEvento() {
+        return fechaEvento;
+    }
+
+    public void setFechaEvento(String fechaEvento) {
+        this.fechaEvento = fechaEvento;
+    }
+
     public String getId_user() {
         return id_user;
     }
 
     public void setId_user(String id_user) {
         this.id_user = id_user;
+    }
+
+    public String getImagenEvento() {
+        return imagenEvento;
+    }
+
+    public void setImagenEvento(String imagenEvento) {
+        this.imagenEvento = imagenEvento;
     }
 
     public String getUser_Compra() {

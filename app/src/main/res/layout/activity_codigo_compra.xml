@@ -64,14 +64,6 @@
             android:layout_marginTop="10dp"
             android:text="Guardar QR"
             />
-        <Button
-            android:id="@+id/MenuPrincipal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
-            android:textColor="@color/white"
-            android:layout_marginTop="10dp"
-            android:text="Ir a Menu Principal"
-            />
+
     </androidx.appcompat.widget.LinearLayoutCompat>
     </ScrollView>

@@ -51,7 +51,7 @@ public class ListaAdmin extends Fragment {
     private void ObtenerLista() {
         final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference("BoletosComprados");
-        reference.orderByChild("evento").addValueEventListener(new ValueEventListener() {
+        reference.orderByChild("fechaEvento").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 administradoresList.clear();

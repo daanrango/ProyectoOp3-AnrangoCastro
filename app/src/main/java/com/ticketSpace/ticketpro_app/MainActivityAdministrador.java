@@ -16,6 +16,8 @@ import android.widget.Toast;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.ticketSpace.ticketpro_app.FragmentosAdministrador.AcercaDeCliente;
+import com.ticketSpace.ticketpro_app.FragmentosAdministrador.CompartirCliente;
 import com.ticketSpace.ticketpro_app.FragmentosAdministrador.InicioAdmin;
 import com.ticketSpace.ticketpro_app.FragmentosAdministrador.ListaAdmin;
 import com.ticketSpace.ticketpro_app.FragmentosAdministrador.PerfilAdmin;
@@ -75,6 +77,14 @@ public class MainActivityAdministrador extends AppCompatActivity implements Navi
 
             case R.id.Salir:
                 CerrarSesion();
+                break;
+
+            case R.id.AcercaDe:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_containerA,new AcercaDeCliente()).commit();
+                break;
+
+            case R.id.Compartir:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_containerA,new CompartirCliente()).commit();
                 break;
         }
         drawerLayout.closeDrawer(GravityCompat.START);
