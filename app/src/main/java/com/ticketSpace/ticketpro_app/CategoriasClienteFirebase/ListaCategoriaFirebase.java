@@ -63,7 +63,10 @@ public class ListaCategoriaFirebase extends AppCompatActivity {
                         imgCatFirebaseElegida.getNombre(),
                         imgCatFirebaseElegida.getPrecio(),
                         imgCatFirebaseElegida.getDireccion(),
-                        imgCatFirebaseElegida.getFecha()
+                        imgCatFirebaseElegida.getFecha(),
+                        imgCatFirebaseElegida.getLatitud(),
+                        imgCatFirebaseElegida.getLonguitud()
+
                 );
             }
 
@@ -85,6 +88,8 @@ public class ListaCategoriaFirebase extends AppCompatActivity {
                         String Direccion = getItem(position).getDireccion();
                         String Fecha = getItem(position).getFecha();
                         String Precio = getItem(position).getPrecio();
+                        String Latitud = getItem(position).getLatitud();
+                        String Longitud = getItem(position).getLonguitud();
                         //final int Vistas = getItem(position).getVistas();
                         //CONVERTIR A STRING LA VISTA
                         //String VistaString = String.valueOf(Vistas);
@@ -121,6 +126,8 @@ public class ListaCategoriaFirebase extends AppCompatActivity {
                         intent.putExtra("Direccion",Direccion);
                         intent.putExtra("Fecha",Fecha);
                         intent.putExtra("Precio",Precio);
+                        intent.putExtra("Latitud",Latitud);
+                        intent.putExtra("Longitud",Longitud);
 
                         startActivity(intent);
 

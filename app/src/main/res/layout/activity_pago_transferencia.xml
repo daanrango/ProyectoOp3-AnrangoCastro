@@ -16,13 +16,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/tiuloCompra"
-            android:layout_margin="20sp"
+            android:layout_margin="1sp"
+            android:layout_marginVertical="10dp"
             android:background="@color/colorPrimary"
             android:fontFamily="sans-serif-black"
             android:textStyle="bold"
             android:gravity="center"
             android:textColor="@color/white"
-            android:textSize="18sp"
+            android:textSize="20dp"
 
             android:layout_marginBottom="10dp">
 
@@ -55,6 +56,7 @@
                 android:layout_height="wrap_content"
                 android:text="Evento: "
                 android:textStyle="bold"
+                android:textColor="@color/black"
                 android:background="@drawable/style_table"
                 android:gravity="center">
             </androidx.appcompat.widget.AppCompatTextView>
@@ -66,6 +68,7 @@
                 android:text="@string/numUnitario"
                 android:textStyle="bold"
                 android:gravity="center"
+                android:textColor="@color/black"
                 android:id="@+id/nombreEvento"
                 android:background="@drawable/style_table"
                 >
@@ -82,7 +85,8 @@
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:text="@string/cantidad"
-                android:textSize="25dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
                 android:background="@drawable/style_table"
                 android:paddingStart="5dp">
             </androidx.appcompat.widget.AppCompatTextView>
@@ -92,7 +96,8 @@
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:text="@string/numUnitario"
-                android:textSize="25dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
                 android:gravity="center"
                 android:background="@drawable/style_table"
                 android:id="@+id/numCantidad"
@@ -110,7 +115,8 @@
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:text="@string/totalcosto"
-                android:textSize="25dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
                 android:background="@drawable/style_table"
                 android:paddingStart="5dp">
             </androidx.appcompat.widget.AppCompatTextView>
@@ -120,7 +126,8 @@
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:text="@string/numCantidad"
-                android:textSize="25dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:background="@drawable/style_table"
@@ -132,9 +139,10 @@
         <TextView
             android:text="Datos para la Transferencia"
             android:gravity="center"
-            android:textSize="16sp"
+            android:textSize="18sp"
             android:textColor="@color/black"
             android:background="#F9694A"
+            android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20px">
@@ -144,7 +152,7 @@
             android:text="@string/dFinalizarcompra"
             android:gravity="left"
             android:textColor="#000"
-            android:textSize="20dp"
+            android:textSize="18dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20px">
@@ -162,8 +170,9 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:textSize="20dp"
+                android:textColor="@color/black"
                 android:background="#F6D909"
-                android:text="BANCO PICHINCHA"/>
+                android:text="Banco Pichincha"/>
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
@@ -181,6 +190,8 @@
                 Nombre: Ticket Pro \n
                 RUC: 1751568682001 \nUna vez que confirmes la transferencia se te acreditaran directamente tus entradas en un lapso de 24 horas."
                     android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
                     android:layout_height="match_parent"/>
 
             </androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,9 +1,5 @@
 package com.ticketSpace.ticketpro_app.DetalleCliente;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatEditText;
-import androidx.appcompat.widget.AppCompatTextView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
@@ -16,10 +12,11 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatTextView;
+
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 import com.ticketSpace.ticketpro_app.R;
 
 import java.text.SimpleDateFormat;
@@ -156,7 +153,7 @@ public class CompraEvento extends AppCompatActivity {
                         intent.putExtra("FechaEvento",fechaEvento);
                         startActivity(intent);
                     }else{
-                        Toast.makeText(CompraEvento.this, "Hacia Tarjeta", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(CompraEvento.this, "Hacia Tarjeta", Toast.LENGTH_SHORT).show();
                         Intent intent=new Intent(CompraEvento.this,PagoTarjeta.class);
                         intent.putExtra("Boletos_Comprados",boletosComprados);
                         intent.putExtra("Fecha_Compra",fechaCompra);

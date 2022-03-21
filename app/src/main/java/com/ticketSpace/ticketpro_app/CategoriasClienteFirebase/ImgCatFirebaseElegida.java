@@ -8,15 +8,22 @@ public class ImgCatFirebaseElegida {
     String direccion;
     String fecha;
 
+    //hasta aqui funciona bien
+
+    String latitud;
+    String longuitud;
+
     public ImgCatFirebaseElegida() {
     }
 
-    public ImgCatFirebaseElegida(String imagen, String nombre, String precio, String direccion, String fecha) {
+    public ImgCatFirebaseElegida(String imagen, String nombre, String precio, String direccion, String fecha, String latitud, String longuitud) {
         this.imagen = imagen;
         this.nombre = nombre;
         this.precio = precio;
         this.direccion = direccion;
         this.fecha = fecha;
+        this.latitud = latitud;
+        this.longuitud = longuitud;
     }
 
     public String getImagen() {
@@ -57,5 +64,21 @@ public class ImgCatFirebaseElegida {
 
     public void setFecha(String fecha) {
         this.fecha = fecha;
+    }
+
+    public String getLatitud() {
+        return latitud;
+    }
+
+    public void setLatitud(String latitud) {
+        this.latitud = latitud;
+    }
+
+    public String getLonguitud() {
+        return longuitud;
+    }
+
+    public void setLonguitud(String longuitud) {
+        this.longuitud = longuitud;
     }
 }

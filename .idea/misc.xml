@@ -16,13 +16,15 @@
         <entry key="..\:/EXMENBASES/INGENIERIA/Optativa III/Proyecto Final/ticketPro_App/app/src/main/res/drawable/style_table.xml" value="0.21" />
         <entry key="..\:/EXMENBASES/INGENIERIA/Optativa III/Proyecto Final/ticketPro_App/app/src/main/res/layout/activity_cambio__pass.xml" value="0.2015625" />
         <entry key="..\:/EXMENBASES/INGENIERIA/Optativa III/Proyecto Final/ticketPro_App/app/src/main/res/layout/activity_codigo_compra.xml" value="0.25" />
-        <entry key="..\:/EXMENBASES/INGENIERIA/Optativa III/Proyecto Final/ticketPro_App/app/src/main/res/layout/activity_compra_evento.xml" value="0.25" />
+        <entry key="..\:/EXMENBASES/INGENIERIA/Optativa III/Proyecto Final/ticketPro_App/app/src/main/res/layout/activity_compra_evento.xml" value="0.22" />
+        <entry key="..\:/EXMENBASES/INGENIERIA/Optativa III/Proyecto Final/ticketPro_App/app/src/main/res/layout/activity_conciertos_cliente.xml" value="0.1" />
         <entry key="..\:/EXMENBASES/INGENIERIA/Optativa III/Proyecto Final/ticketPro_App/app/src/main/res/layout/activity_detalle_cliente.xml" value="0.2015625" />
         <entry key="..\:/EXMENBASES/INGENIERIA/Optativa III/Proyecto Final/ticketPro_App/app/src/main/res/layout/activity_detalle_evento_comprado.xml" value="0.2015625" />
         <entry key="..\:/EXMENBASES/INGENIERIA/Optativa III/Proyecto Final/ticketPro_App/app/src/main/res/layout/activity_inicio_sesion.xml" value="0.18" />
         <entry key="..\:/EXMENBASES/INGENIERIA/Optativa III/Proyecto Final/ticketPro_App/app/src/main/res/layout/activity_lista_categoria_firebase.xml" value="0.2015625" />
         <entry key="..\:/EXMENBASES/INGENIERIA/Optativa III/Proyecto Final/ticketPro_App/app/src/main/res/layout/activity_main.xml" value="0.2015625" />
         <entry key="..\:/EXMENBASES/INGENIERIA/Optativa III/Proyecto Final/ticketPro_App/app/src/main/res/layout/activity_main_administrador.xml" value="0.2015625" />
+        <entry key="..\:/EXMENBASES/INGENIERIA/Optativa III/Proyecto Final/ticketPro_App/app/src/main/res/layout/activity_maps.xml" value="0.25" />
         <entry key="..\:/EXMENBASES/INGENIERIA/Optativa III/Proyecto Final/ticketPro_App/app/src/main/res/layout/activity_pago_tarjeta.xml" value="0.25" />
         <entry key="..\:/EXMENBASES/INGENIERIA/Optativa III/Proyecto Final/ticketPro_App/app/src/main/res/layout/activity_pago_transferencia.xml" value="0.22" />
         <entry key="..\:/EXMENBASES/INGENIERIA/Optativa III/Proyecto Final/ticketPro_App/app/src/main/res/layout/admin_item.xml" value="0.2015625" />

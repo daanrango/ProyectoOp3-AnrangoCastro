@@ -1,20 +1,23 @@
 package com.ticketSpace.ticketpro_app.DetalleCliente;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.StrictMode;
+import android.text.SpannableString;
+import android.text.style.UnderlineSpan;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.github.clans.fab.FloatingActionButton;
 import com.squareup.picasso.Picasso;
+import com.ticketSpace.ticketpro_app.MapsActivity;
 import com.ticketSpace.ticketpro_app.R;
 
 import java.io.File;
@@ -27,7 +30,7 @@ public class DetalleCliente extends AppCompatActivity {
     TextView NombreImagenDetalle,fechaTXT,direcccionTXT,precioTXT,fechaTXT2;
 
     FloatingActionButton fabEstablecer,fabCompartir;
-    String precio,Nombre, imagen,Fecha;
+    String precio,Nombre, imagen,Fecha,latitud,longitud;
 
     Bitmap bitmap;
     @Override
@@ -49,6 +52,8 @@ public class DetalleCliente extends AppCompatActivity {
         String Direccion = getIntent().getStringExtra("Direccion");
         this. Fecha = getIntent().getStringExtra("Fecha");
         this.precio = getIntent().getStringExtra("Precio");
+        this.latitud = getIntent().getStringExtra("Latitud");
+        this.longitud = getIntent().getStringExtra("Longitud");
 
         try {
             //SI LA IMAGEN FUE TRAIDA
@@ -59,16 +64,30 @@ public class DetalleCliente extends AppCompatActivity {
         }
 
         NombreImagenDetalle.setText(Nombre.toUpperCase());
-        direcccionTXT.setText("En el: "+Direccion+".");
+        SpannableString mitextoU = new SpannableString("En el: "+Direccion+".");
+        mitextoU.setSpan(new UnderlineSpan(), 0, mitextoU.length(), 0);
+        direcccionTXT.setText(mitextoU);
         fechaTXT.setText(infoFecha(Fecha));
         fechaTXT2.setText(calcularDias(Fecha));
         precioTXT.setText("Costo: "+precio+" USD");
+
+        direcccionTXT.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Mapa
+                Intent intent=new Intent(DetalleCliente.this, MapsActivity.class);
+                intent.putExtra("Longuitud",latitud);
+                intent.putExtra("Latitud",longitud);
+                intent.putExtra("Etiqueta",Direccion);
+                intent.putExtra("sniper",Nombre);
+                startActivity(intent);
+            }
+        });
 
 
         fabEstablecer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Toast.makeText(DetalleCliente.this, "Aqui va tu parte SANTIAGO <3", Toast.LENGTH_SHORT).show();
                 Intent intent=new Intent(DetalleCliente.this,CompraEvento.class);
                 intent.putExtra("PrecioEntrada",precio);
                 intent.putExtra("NombreEvento",Nombre);

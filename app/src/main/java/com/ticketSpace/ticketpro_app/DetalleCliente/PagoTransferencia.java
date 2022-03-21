@@ -1,13 +1,13 @@
 package com.ticketSpace.ticketpro_app.DetalleCliente;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatTextView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatTextView;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -33,7 +33,7 @@ public class PagoTransferencia extends AppCompatActivity {
 
 
         numCantidad.setText(transaccion().get(0));
-        numTotal.setText(transaccion().get(5));
+        numTotal.setText("$ "+transaccion().get(5));
         nombre.setText(transaccion().get(6));
 
         confimarTransferencia.setOnClickListener(new View.OnClickListener() {

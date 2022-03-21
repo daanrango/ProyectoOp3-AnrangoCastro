@@ -15,13 +15,13 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20sp"
+            android:layout_margin="5sp"
             android:background="@color/colorPrimary"
             android:fontFamily="sans-serif-black"
             android:text="@string/ActivityBoletos"
             android:gravity="center"
             android:textColor="@color/white"
-            android:textSize="25dp"/>
+            android:textSize="20dp"/>
 
         <com.airbnb.lottie.LottieAnimationView
             android:layout_width="match_parent"
@@ -51,13 +51,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
+                    android:textColor="@color/black"
                     android:hint="@string/NumeroBoletos"
                     android:inputType="number" />
             </com.google.android.material.textfield.TextInputLayout>
             <Button
                 android:id="@+id/Adicion"
                 android:text="@string/Adicion"
-                android:layout_width="20dp"
+                android:layout_width="18dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:background="@color/colorPrimary"
@@ -68,7 +69,7 @@
 
             <Button
                 android:id="@+id/Sustraccion"
-                android:layout_width="20dp"
+                android:layout_width="18dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/Sustraccion"
@@ -105,6 +106,7 @@
                     android:layout_height="wrap_content"
                     android:text="Evento: "
                     android:textStyle="bold"
+                    android:textColor="@color/black"
                     android:background="@drawable/style_table"
                     android:gravity="center">
                 </androidx.appcompat.widget.AppCompatTextView>
@@ -115,6 +117,7 @@
                     android:layout_height="wrap_content"
                     android:text=" "
                     android:textStyle="bold"
+                    android:textColor="@color/black"
                     android:gravity="center"
                     android:id="@+id/nombreEvento"
                     android:background="@drawable/style_table"
@@ -131,8 +134,9 @@
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:text="@string/valorunitario"
+                    android:textColor="@color/black"
                     android:paddingStart="5dp"
-                    android:textSize="25dp"
+                    android:textSize="18dp"
                     android:background="@drawable/style_table">
                 </androidx.appcompat.widget.AppCompatTextView>
 
@@ -141,7 +145,8 @@
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:text="@string/numUnitario"
-                    android:textSize="25dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
                     android:gravity="center"
                     android:background="@drawable/style_table"
                     android:id="@+id/numUnitario"
@@ -158,7 +163,8 @@
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:text="@string/cantidad"
-                    android:textSize="25dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
                     android:background="@drawable/style_table"
                     android:paddingStart="5dp">
                 </androidx.appcompat.widget.AppCompatTextView>
@@ -168,7 +174,8 @@
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:text="@string/numCantidad"
-                    android:textSize="25dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
                     android:gravity="center"
                     android:background="@drawable/style_table"
                     android:id="@+id/numCantidad">
@@ -187,14 +194,16 @@
                     android:background="@drawable/style_table"
                     android:paddingStart="5dp"
                     android:text="@string/subtotal"
-                    android:textSize="25dp"></androidx.appcompat.widget.AppCompatTextView>
+                    android:textSize="18dp"
+                    android:textColor="@color/black"></androidx.appcompat.widget.AppCompatTextView>
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:text="@string/numSubtotal"
-                    android:textSize="25dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
                     android:gravity="center"
                     android:background="@drawable/style_table"
                     android:id="@+id/numSubtotal">
@@ -211,7 +220,8 @@
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:text="@string/totalcosto"
-                    android:textSize="25dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
                     android:background="@drawable/style_table"
                     android:paddingStart="5dp">
                 </androidx.appcompat.widget.AppCompatTextView>
@@ -221,7 +231,8 @@
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:text="@string/numTotal"
-                    android:textSize="25dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
                     android:gravity="center"
                     android:textStyle="bold"
                     android:background="@drawable/style_table"
@@ -251,7 +262,7 @@
             android:id="@+id/pago"
             android:gravity="center"
             android:padding="5dip"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:textAlignment="center">
 
         </Spinner>

@@ -38,7 +38,7 @@ public class ViewHolderImgCatFElegida  extends RecyclerView.ViewHolder {
         });
     }
 
-    public void SeteoCategoriaFElegida (Context context, String imagen, String nombre, String precio, String direccion, String fecha){
+    public void SeteoCategoriaFElegida (Context context, String imagen, String nombre, String precio, String direccion, String fecha, String longuitud, String latitud){
         ImageView ImgCatFElegida;
         TextView NombreEvento,PrecioEvento;
 

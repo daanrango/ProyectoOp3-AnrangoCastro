@@ -90,7 +90,7 @@
     <string name="numTotal">0</string>
     <string name="tiuloCompra">Finalizar Compra</string>
 
-    <string name="dFinalizarcompra">Porfavor transfiere o deposita el total a pagar a la siguiente cuenta para completar tu compra.GRACIAS</string>
+    <string name="dFinalizarcompra">Porfavor transfiera o deposite el total a pagar a la siguiente cuenta para completar tu compra.\nGRACIAS</string>
     <string name="descripcionCuenta">Cuenta Corriente: 22661456745\n
                 Nombre: Ticket Pro\n
                 RUC: 1751568682001\n
@@ -140,6 +140,7 @@
     <!--ComparteApp-->
     <string name="ComparteEstaApp"> Te agradeceriamos mucho si nos ayudas a crecer. Porfavor comparte esta AppCon tus amigos</string>
     <string name="BtnCompartitr"> Compartir Ahora</string>
+    <string name="title_activity_maps">MapsActivity</string>
 
 
 </resources>
